@@ -7,6 +7,7 @@
 "Output/Debug/Obj/stm32g0_max7219/i2c_config.o"
 "Output/Debug/Obj/stm32g0_max7219/spi_config.o"
 "Output/Debug/Obj/stm32g0_max7219/timer_config.o"
+"Output/Debug/Obj/stm32g0_max7219/max7219_interface.o"
 "Output/Debug/Obj/stm32g0_max7219/delay.o"
 "Output/Debug/Obj/stm32g0_max7219/max7219.o"
 "Output/Debug/Obj/stm32g0_max7219/SEGGER_THUMB_Startup.o"
