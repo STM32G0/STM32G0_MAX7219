@@ -22,24 +22,21 @@ SYSTEM_MANAGER_Initialize();
 
 SysTick_Config(16000000 * 0.5); //ok 0.5 s
 
-//max7219_init();
-max7219.InitAllDevice(); //u¿ywamy interfejs
-//max7219_clear();
+/* u¿ywamy interfejsu do rozmowy z MAX7219 */
+max7219.InitAllDevice();
 max7219.ClearAllDevice();
 
-//max7219_SendToDevice(Device0, MAX7219_DIGIT5, 5|kropka)  ;
 max7219.SendToDevice(Device0, MAX7219_DIGIT5, 5|kropka)  ;
-//max7219_SendToDevice(Device0, MAX7219_DIGIT6, 2)  ;
 max7219.SendToDevice(Device0, MAX7219_DIGIT6, 2)  ;
 
-max7219_SendToDevice(Device1, MAX7219_DIGIT0, 2)  ;
-max7219_SendToDevice(Device1, MAX7219_DIGIT1, 1|kropka)  ;
-max7219_SendToDevice(Device1, MAX7219_DIGIT2, 5)  ;
+max7219.SendToDevice(Device1, MAX7219_DIGIT0, 2)  ;
+max7219.SendToDevice(Device1, MAX7219_DIGIT1, 1|kropka)  ;
+max7219.SendToDevice(Device1, MAX7219_DIGIT2, 5)  ;
 
-max7219_SendToDevice(Device0, MAX7219_DIGIT0, 1)  ;
-max7219_SendToDevice(Device0, MAX7219_DIGIT1, 2)  ;
-max7219_SendToDevice(Device0, MAX7219_DIGIT2, 3|kropka)  ;
-max7219_SendToDevice(Device0, MAX7219_DIGIT3, 1)  ;
+max7219.SendToDevice(Device0, MAX7219_DIGIT0, 1)  ;
+max7219.SendToDevice(Device0, MAX7219_DIGIT1, 2)  ;
+max7219.SendToDevice(Device0, MAX7219_DIGIT2, 3|kropka)  ;
+max7219.SendToDevice(Device0, MAX7219_DIGIT3, 1)  ;
 
 
 while(1){
