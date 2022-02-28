@@ -33,24 +33,6 @@ void max7219_init(void)
 }
 
 
-// czyszczenie zawartosci wszystkich wyswietlaczy LED
-void max7219_clear(void)
-{
-	uint8_t i=MAX7219_USE_DIGIT ;
-	while (i) {
-#if MAX7219_USE_BCD_DECODE == 0
-		max7219_send(i,0);
-#else
-		if ((MAX7219_USE_BCD_DECODE & (1<<i))) {
-			max7219_send(i,0xF);
-		} else {
-			max7219_send(i,0);
-		}
-		i--;
-#endif
-	}
-}
-
 
 void max7219_SendToDevice(uint8_t DeviceNumber, uint8_t Adress, uint8_t Data)
 {
@@ -62,5 +44,26 @@ void max7219_SendToDevice(uint8_t DeviceNumber, uint8_t Adress, uint8_t Data)
         CS_SetLow();	// ustawienie stanu niskiego na linii CS
         SPI1_Transmit_Buffer( Max7219SpiBuffer, (MAX7219_DEVICES * 2));
 	CS_SetHigh();	// ustawienie stanu wysokiego na linii CS (zatrzaœniêcie danych w ukladzie zboczem narastajacym)
+	
+}
+
+// czyszczenie zawartosci wszystkich wyswietlaczy LED
+
+void max7219_clear(void)
+{
+	uint8_t i, j;
+	for(i = 0; i < MAX7219_DEVICES; i++)
+	{
+		for(j = 0; j < 8; j++)
+		{
+                if ((MAX7219_USE_BCD_DECODE & (1<<i))){
+                          max7219_SendToDevice(i, j,0xF);
+                        }
+                        else {
+                          max7219_SendToDevice(i, j,0);
+                        }
+
+		}
+	}
 	
 }

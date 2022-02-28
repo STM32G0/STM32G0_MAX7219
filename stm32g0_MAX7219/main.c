@@ -13,6 +13,7 @@ IDE   : SEGGER Embedded Studio
 #include "max7219_interface.h"
 
 
+
 volatile uint8_t intFlag = 0;
 
 int main(void) {
