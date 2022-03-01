@@ -73,12 +73,12 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="15" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="15" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="26" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="spi_config.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="3127" useTextEdit="1" openedFrom="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/stm32g0_MAX7219/pin_config.c" useBinaryEdit="0" left="0" path="STM32G0xx/CMSIS/Device/Include/stm32g071xx.h" selected="0" top="3104" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="84" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="spi_config.c" selected="0" top="67" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="34" y="58" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="max7219.c" selected="0" top="30" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="43" useTextEdit="1" openedFrom="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_MAX7219/stm32g0_MAX7219/max7219.c" useBinaryEdit="0" left="0" path="max7219.h" selected="1" top="12" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="43" useTextEdit="1" openedFrom="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_MAX7219/stm32g0_MAX7219/max7219.c" useBinaryEdit="0" left="0" path="max7219.h" selected="0" top="12" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="43" y="5" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="max7219_interface.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="29" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="max7219_interface.c" selected="0" top="0" codecName="Default"/>
  </Files>
